@@ -1,3 +1,10 @@
+<?php
+/*declaração de atributos(mesma coisa que variável)*/
+$imagem = 'notebookacer.webp';
+$titulo = 'Notebook Acer';
+$resumo = 'Notebook com processador Intel Core I7 1645U, com 32GB de ram e armazenamento de 2TB. WiFi 6, BlueTooth 5.4 e rede 1Gb';
+$valor = 5999.87 
+?>
 <!doctype html>
 <html lang="pt-BR">
   <head>
@@ -5,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <title>O Lojinha</title>
   </head>
@@ -54,14 +61,14 @@
         <div class="row mt-2">
           <div class="col">
             <div class="card" style="width: 18rem">
-              <img src="notebookvaio.webp" class="card-img-top img-fluid" alt="..." />
+              <img src="<?php echo $imagem; ?>" class="card-img-top img-fluid" alt="..." />
               <div class="card-body">
-                <h5 class="card-title">PRODUTO 1</h5>
+                <h5 class="card-title"><?php echo $titulo; ?></h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card’s content.
+                  <?php echo $resumo; ?>
+                  <p class="text-danger"><b>R$ <?php echo $valor; ?></b></p>
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-dark">Mostrar Produto</a>
               </div>
             </div>
           </div>
@@ -74,7 +81,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-dark">Mostrar Produto</a>
               </div>
             </div>
           </div>
@@ -87,7 +94,7 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-dark">Mostrar Produto</a>
               </div>
             </div>
           </div>
@@ -100,13 +107,13 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-dark">Mostrar Produto</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
