@@ -91,3 +91,11 @@ where
     prosubid = subid
 and
     subcatid = catid
+
+insert into subcategorias
+	(subnome,subcatid)
+values 
+	('Aces. de Carros e Caminhonetes',1),
+	('Aces. de Motos e Quadriciclos',1),
+	('Estabilizadores e No Breaks',24),
+	('Armazenamento',24);
