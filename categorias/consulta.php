@@ -18,6 +18,13 @@ $prp->execute();
 
 <body>
     <div class="container mt-3">
+        <div class="text-end">
+            <a href="insere.php" class="btn btn-outline-success">📄 Novo</a>
+        </div>
+        <div class="input-group mt-3">
+            <input type="text" name="edtbusca" id="edtbusca" class="form-control" placeholder="Digite o nome da Categoria para filtrar">
+            <button type="button" class="btn btn-outline-info">🔍 Filtrar</button>
+        </div>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -32,12 +39,8 @@ $prp->execute();
                         <td><?php echo $dscategoria['catnome']; ?></td>
                         <td><?php echo $dscategoria['catativo'] ? 'ATIVO' : 'INATIVO'; ?></td>
                         <td>
-                            <a href="altera.php?id=<?php echo $dscategoria['catid']; ?>" class="btn btn-outline-warning">
-                                <span>&#9998;</span>
-                            </a>
-                            <a href="exclui.php?id=<?php echo $dscategoria['catid']; ?>" class="btn btn-outline-danger">
-                                <span>&#128465;</span>
-                            </a>
+                            <a href="altera.php?id=<?php echo $dscategoria['catid']; ?>" class="btn btn-outline-warning">✏️</a>
+                            <a href="exclui.php?id=<?php echo $dscategoria['catid']; ?>" class="btn btn-outline-danger">🗑️</a>
                         </td>
                     </tr>
                 <?php } ?>

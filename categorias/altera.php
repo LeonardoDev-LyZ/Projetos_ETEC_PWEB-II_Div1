@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <label for="edtcategoria">Categoria</label>
                 <input type="text" name="edtcategoria" id="edtcategoria" class="form-control" required value="<?php echo $ds['catnome'];?>">
             </div>
-            <button type="submit" class="btn btn-outline-primary mt-3">Gravar</button>
+            <button type="submit" class="btn btn-outline-primary mt-3">💾 Gravar</button>
         </form>
     </div>
 </body>
